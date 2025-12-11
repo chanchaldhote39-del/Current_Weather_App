@@ -1,0 +1,85 @@
+ .mapouter {
+  position: relative;
+  text-align: center; /* centers the inner map */
+   width: 100%;
+  display: grid;
+  justify-content: center;/* horizontally center */
+   align-items: center;
+  margin-top: 0px;
+} 
+
+ .gmap_canvas {
+   overflow: hidden;
+  background: none !important;
+  height: 350px;
+  width: 80%;            /* adjust width for responsiveness */
+   max-width: 600px;      /* keeps it from getting too wide */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  
+}       
+body{
+    background-image: url(https://www.weathercompany.com/wp-content/uploads/2024/01/AdobeStock_359999296-sized.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0%;
+    padding: 0%;
+    position: fixed;
+
+}
+#container{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTubd25hBC6E9G0YfKaMo-SC-SzOW5MPr30Uw&s);
+     background-repeat: no-repeat;
+     position: relative;
+     z-index: 10;
+
+}
+
+h3,p{
+    color:black;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    padding-left: 400px;
+    color: white;
+}
+input ,button h1{
+   margin-top: 0;
+   padding: 0%;
+   display: inline-block;
+  
+   
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    width: 90%;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .search-bar input {
+    width: 90%;
+  }
+
+  .gmap_canvas {
+    height: 250px;
+  }
+}
+
+.gmap_canvas{
+    display: inline-block;
+}
+.mapouter{
+    padding-left: 300px;
+    margin-top: 0rem;
+   text-align: center;
+}  
+
+ 
